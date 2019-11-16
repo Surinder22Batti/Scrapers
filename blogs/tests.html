@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Testing</title>
+    </head>
+    <body>
+
+    <h1>Welcome to Dashboard!!!!!!!!!!!!!!!</h1>
+
+    <script>
+        document.cookie = "username=John Doe";
+
+        var c = document.cookie.split(';')
+        c = c.map(function(c){ 
+                var d = c.split('='); 
+                var k = d[0].toString().trim(); 
+                var v = d[1].toString().trim(); 
+                console.log("key : ",k);
+                console.log("value : ",v);
+                console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                //document.cookie = k + '=' + v + ';expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/;';
+            });
+
+    </script>
+
+    </body>
+</html>
